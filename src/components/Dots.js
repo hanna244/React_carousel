@@ -1,7 +1,7 @@
 import React  from 'react'
 import imageSlider from './ImageSlider'
 
-function Dots({activeIndex, onClick, imageSlide}) {
+function Dots({activeIndex}) {
     return (
     <div className="all-dots">
         {imageSlider.map((slide, index) => 
