@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: #E2999A;
+  padding-top: 20px;
+  overflow: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* * @ RESET CSS * ------------------------------- */ 
+html, body, div, p, span, strong, b, em, iframe, pre, h1, h2, h3, h4, h5, h6, img, dl, dt, dd, fieldset, form, legend, label, table, caption, thead, tbody, tfoot, tr, th, td, ul, ol, li, a, input, select, textarea {margin: 0;padding: 0; border: 0 none; }
+ul, ol, li {list-style: none;}
+em, address {font-style: normal;}
+img {border: 0 none; font-size: 0;line-height: 0;}
+sup {position: relative;top: 2px;font-size: 11px;line-height: 100%;}
+table {border-collapse: collapse; border-spacing:0; }
+caption {overflow: hidden;width: 0;height: 0;font-size: 0; line-height: 0;}
+th, td { vertical-align: middle;/* white-space: nowrap */}
+a {color: #333; text-decoration: none; line-height: 1;}
+a:hover, a:focus, a:active {text-decoration: underline;}
+a:visited {color: #333;}
+*, html {box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
+*, *:before, *:after {box-sizing: border-box;-webkit-box-sizing: border-box; -moz-box-sizing: border-box;}
+
+
+.img_g {
+  width: 100%;
+  display: block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper_header {
   display: flex;
-  flex-direction: column;
+  flex-flow: nowrap row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0 14px 0 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.link_logo {
+  display: inline-block;
+  vertical-align: top;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.link_menu {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.wrapper_main {
+  padding: 50px 22px ;
+}
+
+.list_views li + li {
+  margin-top: 16px;
+}
+
+.box_view {
+  background-color: #fff;
+  border: solid 1px #EEC2C2;
+}
+
+.tit_view {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #E2999A;
+  padding: 52px 20px 0;
+}
+
+.desc_view{
+  font-size: 14px;
+  color: #E2999A;
+  line-height: 21px;
+  padding: 12px 20px 35px;
+  font-weight: 400;
 }
