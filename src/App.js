@@ -1,8 +1,11 @@
-import Slider from './components/Slider';
+import './App.css';
+import Mobile from './components/Mobile';
 
 function App() {
   return (
-    <Slider />
+    <div className='main'>
+      <Mobile />
+    </div>
   );
 }
 
