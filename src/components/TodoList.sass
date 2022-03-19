@@ -1,0 +1,75 @@
+.title_todo
+  margin: 0 auto
+  padding-top: 100px
+  width: 400px
+  text-align: center
+  font-size: 60px
+  font-weight: 300
+  color: #009688
+
+.wrap_todo
+  margin: 0 auto
+  width: 550px
+  background-color: rgb(255, 255, 255)
+
+.form_todolist
+  display: flex
+  align-items: center
+  height: 50px
+
+.btn_allchoiceitem
+  background-color: #fff
+  border: none
+  padding: 15px
+  cursor: pointer
+
+.input_todo 
+  flex: 1
+
+.btn_addListItem 
+  background-color: #fff
+  border: none
+  padding: 15px
+  font-size: 0
+
+.btn_addListItem::before
+  content: '+'
+  display: inline-block
+  padding: 7px
+  font-size: 45px
+  color: #009688
+  background-color: #fff
+
+/* 참고: https://www.w3schools.com/howto/howto_css_arrows.asp */
+.btn_allchoiceitem::before
+  content: ''
+  border: solid #009688
+  border-width: 0 3px 3px 0
+  display: inline-block
+  padding: 7px
+  transform: rotate(45deg)
+  -webkit-transform: rotate(45deg)
+  background-color: #fff
+
+.btn_allchoiceitem:hover::before, .btn_addListItem:hover::before 
+  border-color: #7dd1d3
+
+
+.resetList 
+    li
+        overflow: hidden
+        padding: 15px
+
+    .control_group
+        float: left
+
+    li .active
+        text-decoration: line-through
+        color: #dce5db
+
+    .item_desc
+        padding-left: 15px
+    
+    .item_del
+        float: right
+
