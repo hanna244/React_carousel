@@ -1,5 +1,5 @@
 import GreenStore from "./components/GreenStore";
-import "./reset.css";
+import "./style/index.css";
 
 function App() {
   return (

@@ -83,7 +83,7 @@ function Coupang(props) {
         <div className={tooltip ? "wrap_help on" : "wrap_help"}>
           <button
             type="button"
-            className="ico_coupang"
+            className="ico_store"
             onClick={() => {
               setTooltip(true);
             }}
@@ -122,7 +122,7 @@ function Coupang(props) {
           className={count ? "bth_start" : "bth_start disable"}
         >
           <span className="txt_start">
-            <span className="ico_coupang"></span>구매하기
+            <span className="ico_store"></span>구매하기
           </span>
         </button>
       </div>
