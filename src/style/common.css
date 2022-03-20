@@ -1,0 +1,66 @@
+.focusVisible:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(46, 222, 117, 0.7);
+}
+.focusVisible:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: none;
+}
+.focusVisible:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(46, 222, 117, 0.7);
+}
+
+::-moz-selection {
+  background: #303030;
+  color: #f2ea17;
+}
+
+::selection {
+  background: #303030;
+  color: #f2ea17;
+}
+
+img::-moz-selection {
+  background: transparent;
+  color: inherit;
+}
+
+img::selection {
+  background: transparent;
+  color: inherit;
+}
+
+button:focus-visible {
+  position: relative;
+  z-index: 100;
+}
+
+.a11yHidden {
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  clip-path: circle(0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.ico_store {
+  display:inline-block;
+  overflow:hidden;
+  font-size:1px;
+  line-height:0;
+  background:url(../assets/ico_store.png) 0 0 no-repeat;
+  background-size:100px 100px;
+  color:transparent;
+  vertical-align:top
+}
+
+.img_g {
+  display: block;
+  width: 100%;
+}
