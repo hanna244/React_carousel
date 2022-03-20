@@ -1,8 +1,11 @@
-import Slider from './components/Slider';
+import GreenStore from "./components/GreenStore";
+import "./reset.css";
 
 function App() {
   return (
-    <Slider />
+    <div>
+      <GreenStore />
+    </div>
   );
 }
 
