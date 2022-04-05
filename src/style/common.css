@@ -54,7 +54,7 @@ button:focus-visible {
   overflow:hidden;
   font-size:1px;
   line-height:0;
-  background:url(../assets/ico_store.png) 0 0 no-repeat;
+  background:url(../assets/ico_store.png) no-repeat;
   background-size:100px 100px;
   color:transparent;
   vertical-align:top

@@ -4,12 +4,18 @@
   margin: 16px;
 }
 
-.box_qoupang {
+.box_store {
   border-top: 1px solid #DEE0E3;
   padding: 16px 0;
 }
 
-.box_qoupang:first-child, .box_qoupang:last-child {
+.box_store::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.box_store:first-child, .box_store:last-child {
   border: none;
 }
 
@@ -18,8 +24,9 @@
 }
 
 .tit_product {
-  margin: 0;
-  font-size: 20px;
+  margin: 16px 0 0;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .wrap_price {
@@ -57,25 +64,161 @@
   color: #6B90DC;
 }
 
+.delivery_price {
+  font-size: 14px;
+  color: #333;
+  display: block;
+  font-weight: 600;
+}
+
+.price_num {
+  display: inline-block;
+  position: relative;
+  margin-left: 12px;
+  font-weight: bold;
+}
+
+.price_num::before {
+  content: "";
+  width: 1px;
+  background-color: #DEE0E3;
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  left: -5px;
+}
+
+.price_notice {
+  display: inline-block;
+  font-weight: bold;
+  color: #6B90DC;
+  margin-left: 2px;
+}
+
+.delivery_notice {
+  font-weight: 600;
+  font-size: 14px;
+  color: #999;
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.ico_store.btn_decrease {
+  width: 34px;
+  height: 34px;
+  background-position: 0 -52px;
+}
+
+.ico_store.btn_increase {
+  width: 34px;
+  height: 34px;
+  background-position: 0 -17px;
+}
+
+.inp_length {
+  border: 0;
+  width: 38px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.wrap_help{
+  float: left;
+  position: relative;
+}
+
+.wrap_priceinfo{
+  float: right;
+  font-size: 14px;
+  color: #999;
+  font-weight: bold;
+}
+
+.wrap_priceinfo .group_prodectlength {
+  display: inline-block;
+  font-size: inherit;
+}
+
+.wrap_priceinfo .txt_length {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.wrap_priceinfo .txt_price {
+  display: inline-block;
+  font-size: 22px;
+  color: #6B90DC;
+  margin-left: 12px;
+  position: relative;
+}
+
+.wrap_priceinfo .txt_price::before {
+  content: "";
+  width: 1px;
+  background-color: #DEE0E3;
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: -5px;
+}
+
 .wrap_help .inner_help {
  display: none; 
 }
 
 .wrap_help.on .inner_help {
   display: block;
+  position: absolute;
 }
 
+.btn_help {
+  padding: 0;
+  background-color: inherit;
+  display: inline-block;
+}
 
-.wrap_help .ico_store {
+.btn_help .ico_store {
   width: 16px;
   height: 16px;
   background-position: -12px 0;
+  margin-left: 2px;
 }
 
 .inner_help{
   background-color: #fff;
   border: 1px solid #DEE0E3;
   width: 296px;
+  position: relative;
+  padding: 17px 43px 15px 15px;
+}
+
+.inner_help .desc_help {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #333;
+}
+
+.inner_help .emph_help {
+  color: #6B90DC;
+}
+
+.inner_help .btn_close {
+  padding: 0;
+  background-color: inherit;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 16px;
+  right: 15px;
+}
+
+.inner_help .btn_close .ico_store {
+  width: 16px;
+  height: 16px;
+  background-position: -64px 0;
 }
 
 /* https://hianna.tistory.com/413 */

@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Store } from "../contexts/Store";
 
-function Count({ handleIncrease, handleDecrease, count, handleInputValue }) {
+function Count() {
+  const store = useContext(Store);
+  const { handleIncrease, handleDecrease, count, handleInputValue } = store;
+
   return (
-    <div className="box_qoupang">
+    <React.Fragment>
       <h2 className="a11yHidden">구매수량</h2>
       <div>
-        <button type="button" onClick={handleDecrease}>
+        <button
+          type="button"
+          onClick={handleDecrease}
+          className="ico_store btn_decrease"
+        >
           빼기
         </button>
         <label htmlFor="productLength"></label>
@@ -15,12 +23,17 @@ function Count({ handleIncrease, handleDecrease, count, handleInputValue }) {
           id="productLength"
           onChange={handleInputValue}
           pattern="[0-9]+"
+          className="inp_length"
         />
-        <button type="button" onClick={handleIncrease}>
+        <button
+          type="button"
+          onClick={handleIncrease}
+          className="ico_store btn_increase"
+        >
           더하기
         </button>
       </div>
-    </div>
+    </React.Fragment>
   );
 }
 
